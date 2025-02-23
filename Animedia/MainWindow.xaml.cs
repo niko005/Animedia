@@ -31,5 +31,21 @@ namespace Animedia
         {
 
         }
+        private void forgot_btn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void registration_btn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void btnMinimize_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void Button_DpiChanged(object sender, DpiChangedEventArgs e)
+        {
+
+        }
     }
 }

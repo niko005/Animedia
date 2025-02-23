@@ -13,3 +13,4 @@ D:\ProjectVS\Animedia\Animedia\obj\Debug\Animedia.csproj.GenerateResource.cache
 D:\ProjectVS\Animedia\Animedia\obj\Debug\Animedia.csproj.CoreCompileInputs.cache
 D:\ProjectVS\Animedia\Animedia\obj\Debug\Animedia.exe
 D:\ProjectVS\Animedia\Animedia\obj\Debug\Animedia.pdb
+D:\ProjectVS\Animedia\Animedia\obj\Debug\Styles.baml
