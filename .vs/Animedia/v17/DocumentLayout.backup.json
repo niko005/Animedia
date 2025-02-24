@@ -3,16 +3,24 @@
   "WorkspaceRootPath": "D:\\ProjectVS\\Animedia\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1EF8814F-DB3C-4545-AFE3-5CEC730C64B9}|Animedia\\Animedia.csproj|d:\\projectvs\\animedia\\animedia\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{1EF8814F-DB3C-4545-AFE3-5CEC730C64B9}|Animedia\\Animedia.csproj|solutionrelative:animedia\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{1EF8814F-DB3C-4545-AFE3-5CEC730C64B9}|Animedia\\Animedia.csproj|d:\\projectvs\\animedia\\animedia\\authorizationwindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "RelativeMoniker": "D:0:0:{1EF8814F-DB3C-4545-AFE3-5CEC730C64B9}|Animedia\\Animedia.csproj|solutionrelative:animedia\\authorizationwindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1EF8814F-DB3C-4545-AFE3-5CEC730C64B9}|Animedia\\Animedia.csproj|d:\\projectvs\\animedia\\animedia\\styles.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{1EF8814F-DB3C-4545-AFE3-5CEC730C64B9}|Animedia\\Animedia.csproj|d:\\projectvs\\animedia\\animedia\\registrationwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{1EF8814F-DB3C-4545-AFE3-5CEC730C64B9}|Animedia\\Animedia.csproj|solutionrelative:animedia\\registrationwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1EF8814F-DB3C-4545-AFE3-5CEC730C64B9}|Animedia\\Animedia.csproj|d:\\projectvs\\animedia\\animedia\\authorizationwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{1EF8814F-DB3C-4545-AFE3-5CEC730C64B9}|Animedia\\Animedia.csproj|solutionrelative:animedia\\authorizationwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1EF8814F-DB3C-4545-AFE3-5CEC730C64B9}|Animedia\\Animedia.csproj|d:\\projectvs\\animedia\\animedia\\registrationwindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "RelativeMoniker": "D:0:0:{1EF8814F-DB3C-4545-AFE3-5CEC730C64B9}|Animedia\\Animedia.csproj|solutionrelative:animedia\\registrationwindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1EF8814F-DB3C-4545-AFE3-5CEC730C64B9}|Animedia\\Animedia.csproj|D:\\ProjectVS\\Animedia\\animedia\\styles.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{1EF8814F-DB3C-4545-AFE3-5CEC730C64B9}|Animedia\\Animedia.csproj|solutionrelative:animedia\\styles.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1EF8814F-DB3C-4545-AFE3-5CEC730C64B9}|Animedia\\Animedia.csproj|D:\\ProjectVS\\Animedia\\animedia\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1EF8814F-DB3C-4545-AFE3-5CEC730C64B9}|Animedia\\Animedia.csproj|solutionrelative:animedia\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,7 +38,57 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AuthorizationWindow.xaml",
+              "DocumentMoniker": "D:\\ProjectVS\\Animedia\\Animedia\\AuthorizationWindow.xaml",
+              "RelativeDocumentMoniker": "Animedia\\AuthorizationWindow.xaml",
+              "ToolTip": "D:\\ProjectVS\\Animedia\\Animedia\\AuthorizationWindow.xaml",
+              "RelativeToolTip": "Animedia\\AuthorizationWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-02-24T19:46:05.755Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "RegistrationWindow.xaml",
+              "DocumentMoniker": "D:\\ProjectVS\\Animedia\\Animedia\\RegistrationWindow.xaml",
+              "RelativeDocumentMoniker": "Animedia\\RegistrationWindow.xaml",
+              "ToolTip": "D:\\ProjectVS\\Animedia\\Animedia\\RegistrationWindow.xaml",
+              "RelativeToolTip": "Animedia\\RegistrationWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-02-24T18:09:20.067Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AuthorizationWindow.xaml.cs",
+              "DocumentMoniker": "D:\\ProjectVS\\Animedia\\Animedia\\AuthorizationWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Animedia\\AuthorizationWindow.xaml.cs",
+              "ToolTip": "D:\\ProjectVS\\Animedia\\Animedia\\AuthorizationWindow.xaml.cs*",
+              "RelativeToolTip": "Animedia\\AuthorizationWindow.xaml.cs*",
+              "ViewState": "AgIAABsAAAAAAAAAAAAYwDAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T19:45:03.852Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RegistrationWindow.xaml.cs",
+              "DocumentMoniker": "D:\\ProjectVS\\Animedia\\Animedia\\RegistrationWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Animedia\\RegistrationWindow.xaml.cs",
+              "ToolTip": "D:\\ProjectVS\\Animedia\\Animedia\\RegistrationWindow.xaml.cs",
+              "RelativeToolTip": "Animedia\\RegistrationWindow.xaml.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAwCIAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T19:44:38.196Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Styles.xaml",
               "DocumentMoniker": "D:\\ProjectVS\\Animedia\\Animedia\\Styles.xaml",
               "RelativeDocumentMoniker": "Animedia\\Styles.xaml",
@@ -38,31 +96,6 @@
               "RelativeToolTip": "Animedia\\Styles.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-02-23T16:27:21.21Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "D:\\ProjectVS\\Animedia\\Animedia\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "Animedia\\MainWindow.xaml",
-              "ToolTip": "D:\\ProjectVS\\Animedia\\Animedia\\MainWindow.xaml",
-              "RelativeToolTip": "Animedia\\MainWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-02-23T15:58:54.89Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "D:\\ProjectVS\\Animedia\\Animedia\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "Animedia\\MainWindow.xaml.cs",
-              "ToolTip": "D:\\ProjectVS\\Animedia\\Animedia\\MainWindow.xaml.cs",
-              "RelativeToolTip": "Animedia\\MainWindow.xaml.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAAwCwAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-23T12:38:55.203Z",
               "EditorCaption": ""
             }
           ]

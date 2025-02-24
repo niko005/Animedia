@@ -1,0 +1,128 @@
+﻿<Window x:Class="Animedia.AuthorizationWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Animedia"
+        mc:Ignorable="d"
+        Height="400" Width="350" WindowStartupLocation="CenterScreen"  
+        KeyDown="Window_KeyDown"  MouseLeftButtonDown="Window_MouseLeftButtonDown"
+        WindowStyle="None" AllowsTransparency="True" Background="Transparent">
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Styles.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+
+    <Border CornerRadius="15">
+
+        <!-- Фоновое изображение -->
+        <Border.Background>
+            <ImageBrush Opacity="1" ImageSource="/Images/back-image.jpg" Stretch="None"/>
+        </Border.Background>
+
+        <Grid>
+
+            <!-- Основной контейнер с пульсирующей границей -->
+            <Border CornerRadius="10" BorderThickness="3" Opacity="0.95" x:Name="PulsatingBorder" >
+
+                <!-- Использование градиентной кисти из ресурсов -->
+                <Border.BorderBrush>
+                    <StaticResource ResourceKey="GradientBorderBrush"/>
+                </Border.BorderBrush>
+
+                <!-- Фон контейнера -->
+                <Border.Background>
+                    <StaticResource ResourceKey="GradientMainBackground"/>
+                </Border.Background>
+
+                <!-- Анимация пульсирующей границы -->
+                <Border.Triggers>
+                    <EventTrigger RoutedEvent="Border.Loaded">
+                        <BeginStoryboard>
+                            <Storyboard RepeatBehavior="Forever">
+                                <!-- Анимация изменения толщины границы -->
+                                <ThicknessAnimation
+                                Storyboard.TargetProperty="BorderThickness"
+                                From="2" To="4" Duration="0:0:1" AutoReverse="True"/>
+                            </Storyboard>
+                        </BeginStoryboard>
+                    </EventTrigger>
+                </Border.Triggers>
+
+            </Border>
+
+            <TextBlock Text="Вход" Foreground="DarkGray"  FontSize="10"
+                               FontFamily="Montserrat" Grid.Column="0" VerticalAlignment="Top" Margin="10,10,0,0"/>
+            
+            <StackPanel VerticalAlignment="Top" HorizontalAlignment="Right" Margin="7" Orientation="Horizontal">
+                
+                <Button x:Name="MinimizeBtn"  BorderThickness="0" Content="─" Foreground="White" FontSize="16" 
+                    FontFamily="Montserrat" Cursor="Hand" Grid.Column="1" Click="OnMinimizeClick" Style="{StaticResource MinimizeBtnStyle}" Template="{StaticResource MinimizeBtnTemplate}"></Button>
+
+                <Button x:Name="CloseBtn" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="7" BorderThickness="0" Content="✕" Foreground="White" FontSize="16" 
+                    FontFamily="Montserrat" Cursor="Hand" Grid.Column="1" Click="OnCloseClick" Style="{StaticResource CloseBtnStyle}" Template="{StaticResource MinimizeBtnTemplate}"></Button>
+            
+            </StackPanel>
+            
+            <!-- Содержимое -->
+            <StackPanel HorizontalAlignment="Center" Margin="0,0,0,30" VerticalAlignment="Bottom" MinWidth="220" Orientation="Vertical">
+
+                <Image Source="/Images/Logo.png" Width="50" Height="50"/>
+
+                <TextBlock Text="Animedia Studio" Foreground="White" FontSize="20"
+                    FontWeight="Medium" FontFamily="Montserrat" HorizontalAlignment="Center"/>
+
+                <!-- Логин -->
+                <TextBlock Text="Логин" Foreground="DarkGray" FontSize="14" 
+                           FontWeight="Medium" FontFamily="Montserrat" Margin="0,10,0,0"/>
+
+                <TextBox x:Name="LoginUsernameTb" FontSize="14" FontWeight="Medium"
+                         FontFamily="Montserrat" Foreground="White" CaretBrush="LightGray"
+                         BorderBrush="DarkGray" BorderThickness="0,0,0,2" Height="28"
+                         VerticalContentAlignment="Center" Margin="0,5,0,0" Padding="20,0,0,0">
+                    <TextBox.Background>
+                        <ImageBrush ImageSource="/Images/user-icon.png"
+                                        Stretch="None"
+                                        AlignmentX="Left"/>
+                    </TextBox.Background>
+                </TextBox>
+
+                <!-- Пароль -->
+                <TextBlock Text="Пароль" Foreground="DarkGray" FontSize="14"
+                           FontWeight="Medium" FontFamily="Montserrat" Margin="0,20,0,0"/>
+
+                <PasswordBox x:Name="LoginPasswordPb" FontSize="14" FontWeight="Medium"
+                         FontFamily="Montserrat" Foreground="White" CaretBrush="LightGray"
+                         BorderBrush="DarkGray" BorderThickness="0,0,0,2" Height="28"
+                         VerticalContentAlignment="Center" Margin="0,5,0,0" Padding="20,0,0,0">
+                    <PasswordBox.Background>
+                        <ImageBrush ImageSource="/Images/key-icon.png"
+                                            Stretch="None"
+                                            AlignmentX="Left"/>
+                    </PasswordBox.Background>
+                </PasswordBox>
+
+
+                <!-- Кнопка "Вход" -->
+                <TextBlock Text="Вход" Margin="0,20,0,0" Foreground="White" FontSize="15" FontWeight="Bold" Cursor="Hand" x:Name="LoginBtn" 
+                           MouseLeftButtonDown="OnLoginClick"  Style="{StaticResource HeaderTextStyle}" HorizontalAlignment="Center"/>
+
+                <!-- Кнопка "Регистрация" -->
+                <TextBlock Text="Регистрация" Foreground="LightGray" Margin="0,10,0,0" Cursor="Hand" x:Name="RegistrationBtn" 
+                           MouseLeftButtonDown="OnRegistrationClick"  Style="{StaticResource HeaderTextStyle}" HorizontalAlignment="Center"/>
+
+
+                <!-- Забыли пароль? -->
+                <TextBlock Text="Забыли Пароль?" Foreground="LightGray" HorizontalAlignment="Center" Style="{StaticResource HeaderTextStyle}"
+                           Cursor="Hand" Margin="0,10,0,0" x:Name="ForgotBtn" MouseLeftButtonDown="OnForgotClick"/>
+
+            </StackPanel>
+
+        </Grid>
+
+    </Border>
+
+</Window>

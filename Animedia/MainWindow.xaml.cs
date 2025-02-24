@@ -21,31 +21,5 @@ namespace Animedia
         {
             InitializeComponent();
         }
-        private void Window_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.Key == Key.Enter)
-                login_btn_Click(sender, e);
-        }
-
-        private void login_btn_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-        private void forgot_btn_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-        private void registration_btn_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-        private void btnMinimize_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-        private void Button_DpiChanged(object sender, DpiChangedEventArgs e)
-        {
-
-        }
     }
 }

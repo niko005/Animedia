@@ -14,3 +14,7 @@ D:\ProjectVS\Animedia\Animedia\obj\Debug\Animedia.csproj.CoreCompileInputs.cache
 D:\ProjectVS\Animedia\Animedia\obj\Debug\Animedia.exe
 D:\ProjectVS\Animedia\Animedia\obj\Debug\Animedia.pdb
 D:\ProjectVS\Animedia\Animedia\obj\Debug\Styles.baml
+D:\ProjectVS\Animedia\Animedia\obj\Debug\AuthorizationWindow.g.cs
+D:\ProjectVS\Animedia\Animedia\obj\Debug\AuthorizationWindow.baml
+D:\ProjectVS\Animedia\Animedia\obj\Debug\RegistrationWindow.g.cs
+D:\ProjectVS\Animedia\Animedia\obj\Debug\RegistrationWindow.baml
