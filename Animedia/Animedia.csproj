@@ -58,11 +58,18 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="ForgotWindow.xaml.cs">
+      <DependentUpon>ForgotWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="RegistrationWindow.xaml.cs">
       <DependentUpon>RegistrationWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="WindowsHelper.cs" />
     <Page Include="AuthorizationWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ForgotWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -122,13 +129,21 @@
     <Resource Include="Images\healthcare-background1.jpg" />
     <Resource Include="Images\key-icon.png" />
     <Resource Include="Images\logo.png" />
-    <Resource Include="Images\user-icon.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\logo_app.ico" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="logo_app.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\user-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\phone-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\calendar-icon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

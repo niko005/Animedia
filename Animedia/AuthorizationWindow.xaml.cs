@@ -32,7 +32,8 @@ namespace Animedia
         }
         private void OnForgotClick(object sender, RoutedEventArgs e)
         {
-
+            WindowsHelper.forgotWindow.Show();
+            this.Hide();
         }
         private void OnRegistrationClick(object sender, RoutedEventArgs e)
         {

@@ -11,5 +11,6 @@ namespace Animedia
         public static AuthorizationWindow authorizationWindow = new AuthorizationWindow();
         public static MainWindow window = new MainWindow();
         public static RegistrationWindow registrationWindow = new RegistrationWindow();
+        public static ForgotWindow forgotWindow = new ForgotWindow();
     }
 }

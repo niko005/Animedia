@@ -8,6 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("logo_app.ico")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/free-icon-calendar-833634.png")]
 
 
