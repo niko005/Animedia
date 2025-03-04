@@ -79,7 +79,7 @@
                 <TextBlock Text="Логин" Foreground="DarkGray" FontSize="14" 
                            FontWeight="Medium" FontFamily="Montserrat" Margin="0,10,0,0"/>
 
-                <TextBox x:Name="LoginUsernameTb" FontSize="14" FontWeight="Medium"
+                <TextBox x:Name="LoginUsernameTb" FontSize="14" FontWeight="Medium" PreviewTextInput="LoginUsernameTb_PreviewTextInput"
                          FontFamily="Montserrat" Foreground="White" CaretBrush="LightGray"
                          BorderBrush="DarkGray" BorderThickness="0,0,0,2" Height="28"
                          VerticalContentAlignment="Center" Margin="0,5,0,0" Padding="20,0,0,0">
@@ -96,7 +96,7 @@
 
                 <PasswordBox x:Name="LoginPasswordPb" FontSize="14" FontWeight="Medium"
                          FontFamily="Montserrat" Foreground="White" CaretBrush="LightGray"
-                         BorderBrush="DarkGray" BorderThickness="0,0,0,2" Height="28"
+                         BorderBrush="DarkGray" BorderThickness="0,0,0,2" Height="28" PreviewTextInput="LoginPasswordPb_PreviewTextInput"
                          VerticalContentAlignment="Center" Margin="0,5,0,0" Padding="20,0,0,0">
                     <PasswordBox.Background>
                         <ImageBrush ImageSource="/Images/key-icon.png"

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -53,6 +54,22 @@ namespace Animedia
         private void Window_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
             DragMove();
+        }
+        private void LoginPasswordPb_PreviewTextInput(object sender, TextCompositionEventArgs e)
+        {
+            // Регулярное выражение для проверки русских букв
+            Regex regex = new Regex("[а-яА-Я]");
+            // Если введенный символ является русской буквой, блокируем ввод
+            if (regex.IsMatch(e.Text))
+                e.Handled |= true; // Блокируем ввод
+        }
+        private void LoginUsernameTb_PreviewTextInput(object sender, TextCompositionEventArgs e)
+        {
+            // Регулярное выражение для проверки русских букв
+            Regex regex = new Regex("[а-яА-Я]");
+            // Если введенный символ является русской буквой, блокируем ввод
+            if (regex.IsMatch(e.Text))
+                e.Handled |= true; // Блокируем ввод
         }
     }
 }

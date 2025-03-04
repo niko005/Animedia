@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -67,6 +68,11 @@ namespace Animedia
             // Проверяем, является ли введенный символ цифрой, если символ не цифра, блокируем его ввод
             if (char.IsDigit(e.Text[0]) && string.IsNullOrEmpty(ForgotTb.Text))
                 isDigitForgot = true;
+            // Регулярное выражение для проверки русских букв
+            Regex regex = new Regex("[а-яА-Я]");
+            // Если введенный символ является русской буквой, блокируем ввод
+            if (regex.IsMatch(e.Text))
+                e.Handled |= true; // Блокируем ввод
         }
 
         private void ForgotTb_TextChanged(object sender, TextChangedEventArgs e)
